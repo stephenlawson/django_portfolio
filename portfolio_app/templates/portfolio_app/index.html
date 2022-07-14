@@ -1,0 +1,142 @@
+
+{% extends 'portfolio_app/main.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+      <div class="col-md-8" style="margin-left: auto;
+      margin-right: auto;">
+        <img
+          src="{% static 'portfolio_app/assets/images/profile_photo.jpg' %}"
+          alt="Stephen"
+          loading="lazy"
+          class="hero-img inverted"
+          style="width: 100%;
+          height: auto;
+          margin-top: 70px;
+          border-radius: 15px;"
+        />
+      </div>
+      <div class="col-md-4" style="margin-left: auto;
+      margin-right: auto;">
+        <div class="bio animate__animated animate__shakeX" 
+        style="background-color: white;
+        opacity: 0.9;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -120px">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            {{ about.about|safe }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        {{ about.more_about|safe }}
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Frameworks and Libraries</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="{% static 'portfolio_app/assets/icons/icons8-django-144.png' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio_app/assets/icons/icons8-python.gif' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio_app/assets/icons/icons8-flask-150.png' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="{% static 'portfolio_app/assets/icons/icons8-mysql-logo-150.png' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio_app/assets/icons/pandas_icon.jpg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio_app/assets/icons/plotly-logo.png' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        {% for project in projects %}
+        <div class="project-container project-card">
+          <img
+            src="{{project.thumbnail.url}}"
+            alt="{{project.headline}}"
+            loading="lazy"
+            class="project-pic inverted"
+          />
+          <h3 class="project-title">{{project.headline}}</h3>
+          <p class="project-details">
+            {{project.sub_headline}}
+          </p>
+          {% for tag in project.tags.all %}
+          <span class="tag inverted">{{tag}}</span>
+          {% endfor %}
+          <br/>
+          <a href="{% url 'project' project.slug %}" class="project-link">Read More</a>
+        </div>
+        {% empty %}
+        <h3>No projects found...</h3>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    
+    <section style="padding: 1rem 3rem;" class="contact" id="contact">
+        <div class="content-section">
+          <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"><h2>Get In Touch With Me</h2></legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+    </section>
+
+    {% endblock content %}

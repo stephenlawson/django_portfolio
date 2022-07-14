@@ -1,0 +1,60 @@
+{% extends 'portfolio_app/main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<main class="container">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark inverted">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">{{project.headline}}</h1>
+        <p class="lead my-3">{{project.sub_headline}}</p>
+        {% for tag in project.tags.all %}
+          <span class="tag">{{tag}}</span>
+        {% endfor %}
+      </div>
+    </div>
+  <div class="row g-5">
+    <div class="col-md-8">
+      <article class="blog-post" style="margin-bottom: 20px;">
+        <p>{{project.body|safe}}</p>
+        {% if project.link %}
+        <button type="button" class="btn btn-primary inverted" onclick="window.location.href='{% url project.link %}';">View Website</button>
+        {% else %}
+        <button type="button" class="btn btn-primary inverted" onclick="window.location.href='{{ project.ex_link }}';">View Website</button>
+        {% endif %}
+        {% if project.github_link %}
+        <button type="button" class="btn btn-dark inverted" onclick="window.location.href='{{ project.github_link }}';">View Source Code</button>
+        {% endif %}
+      </article>
+    </div>
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="fst-italic">Recomended</h4>
+
+                    {% for project in projects %}
+                        <div class="project-container project-card" style="width:auto">
+                        <img
+                            src="{{project.thumbnail.url}}"
+                            alt="{{project.headline}}"
+                            loading="lazy"
+                            class="project-pic inverted"
+                        />
+                        <h3 class="project-title">{{project.headline}}</h3>
+                        {% for tag in project.tags.all %}
+                        <span class="tag inverted">{{tag}}</span>
+                        {% endfor %}
+                        <br/>
+                        <a href="{% url 'project' project.slug %}" class="project-link">Read More</a>
+                        </div>
+                    {% empty %}
+                    <h3>No projects found...</h3>
+                    {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

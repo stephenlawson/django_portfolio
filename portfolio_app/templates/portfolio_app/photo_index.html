@@ -1,0 +1,122 @@
+{% extends "portfolio_app/base.html" %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+  <style>
+    .featurette-divider {
+      margin: 10rem
+    }
+  </style>
+
+  <div class = "pagestuff">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="../static/portfolio_app/img/_B100078.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="../static/portfolio_app/img/P8210516.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="../static/portfolio_app/img/_7180444.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="about" class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" src="../static/portfolio_app/img/profile.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h2 class="fw-normal">About</h2>
+        <p>Hello, my name is Stephen. I am a Richmond based photographer who has been shooting since I was young. I started out taking photos in my backyard and local zoo. Now I do basically the same thing except with a few years of experience under my belt</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div id="macro" class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Macrophotography<span class="text-muted"> Close up and personal with some tiny friends.</span></h2>
+        <p class="lead">I am fascinated with taking photos of very small subjects in order to bring attention to an entire world that goes unnoticed.</p>
+        <p><a class="btn btn-secondary" href="/gallery?category=3">View More &raquo;</a></p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../static/portfolio_app/img/_7180705.jpg" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 id="astro" class="featurette-heading fw-normal lh-1">Astrophotography<span class="text-muted"> An appreciation for the endless cosmos</span></h2>
+        <p class="lead">The endless night sky is just as mesmerizing as the very small.</p>
+        <p><a class="btn btn-secondary" href="/gallery?category=2">View More &raquo;</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../static/portfolio_app/img/tree_stars.jpg" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 id="nature" class="featurette-heading fw-normal lh-1">Nature<span class="text-muted"></span> Love for the natural world</h2>
+        <p class="lead">Capturing the unending splendor of the natural world through my camera is one of my greatest passions.</p>
+        <p><a class="btn btn-secondary" href="/gallery?category=1">View More &raquo;</a></p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../static/portfolio_app/img/_6170414.jpg" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- CONTACT -->
+
+    <section style="padding: 1rem 3rem;" class="contact" id="contact">
+      <div class="content-section">
+        <form method="POST">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4"><h2>Get In Touch With Me</h2></legend>
+              {{ form|crispy }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </div><!-- /.container -->
+
+  {% endblock content %}
