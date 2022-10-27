@@ -55,7 +55,7 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 ### To-Do-List Challenge
 
-This application was created because I can be very forgetful sometimes. Wit this application users can make their own account and keep track of their own to-do-list. They can create, read, update, and delete items as they wish. They may also mark items as complete but still visible if they wish.
+This application was created because I can be very forgetful sometimes. With this application users can make their own account and keep track of their own to-do-list. They can create, read, update, and delete items as they wish. They may also mark items as complete but still visible if they wish.
 
 ### To-Do-List Screenshots
 
@@ -67,7 +67,7 @@ This application was created because I can be very forgetful sometimes. Wit this
 
 ### To-Do-List Link
 
-- Solution URL: [To-Do-List](https://www.stephen.photography/todolist/)
+- Solution URL: [To-Do-List](https://www.stephen.photography/todolist/register/)
 
 # JWST-Hubble Slider
 
@@ -75,7 +75,7 @@ This application was created because I can be very forgetful sometimes. Wit this
 
 ### JWST-Hubble Slider Challenge
 
-For this application I wanted to make a great illustration for the differences between the James Webb Space Telescope and the Hubble Space Telescope. A lot of online slider comparison I have seen did not go to the trouble of actually lining up the images, so for this one I did the extra steps of making sure the images were aligned before pushing them to my AWS S3 bucket.
+For this application I wanted to make a great illustration for the differences between the James Webb Space Telescope and the Hubble Space Telescope. A lot of online slider comparisons I have seen did not go to the trouble of actually lining up the images, so for this one I did the extra steps of making sure the images were aligned before pushing them to my AWS S3 bucket.
 
 ### JWST-Hubble Slider Screenshots
 
@@ -87,12 +87,12 @@ For this application I wanted to make a great illustration for the differences b
 
 ### JWST-Hubble Slider Link
 
-- Solution URL: [Hubble vs JWST Slider](https://www.stephen.photography/hubble-vs-jwst/carina-nebula/)
+- Solution URL: [Hubble vs JWST Slider](https://www.stephen.photography/hubble-vs-jwst/carina-nebula)
 
 
 ## My process
 
-All of these projects utilizes Linode to serve webpages, AWS S3 buckets to serve static and images, and AWS RDS to maintain the MySQL databases.The backend is handled by Django for organizing models, templates, routing, URLs, and admin functionality. 
+All of these projects utilizes Linode to serve webpages, AWS S3 buckets to serve static and images, and AWS RDS to maintain the MySQL databases. The backend is handled by Django for organizing models, templates, routing, URLs, and admin functionality. 
 
 The JWST/Hubble slider and To-Do-List App both utilize custom HTML and CSS, while my photography portfolio uses Bootstrap4 to simplify HTML and CSS while creating an aesthetically pleasing frontend.
 
@@ -123,6 +123,6 @@ I will continue to work on implementing new features, improving the style of the
 
 ## Author
 
-- My Website - [Portfolio Site](https://www.stephen.photography/portfolio)
+- [My Portfolio Site](https://www.stephen.photography/portfolio)
 
 
