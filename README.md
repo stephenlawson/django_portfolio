@@ -47,7 +47,7 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 ### Photography Portfolio Link
 
-- Solution URL: [Food Inventory App](https://www.stephen.photography/)
+- Solution URL: [Photography Portfolio](https://www.stephen.photography/)
 
 # To-Do-List
 
@@ -55,19 +55,19 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 ### To-Do-List Challenge
 
-I wanted to make a stylish and functional website for my photography. Something that is not only a great place to get in contact with potential clients but also put my work on display for them to view.
+This application was created because I can be very forgetful sometimes. Wit this application users can make their own account and keep track of their own to-do-list. They can create, read, update, and delete items as they wish. They may also mark items as complete but still visible if they wish.
 
 ### To-Do-List screenshots
 
-![](./screenshots/photo_index.jpg)
-![](./screenshots/patination_filters.jpg)
-![](./screenshots/contact.jpg)
+![](./screenshots/to_do_list_login.jpg)
+![](./screenshots/to_do_items.jpg)
+![](./screenshots/to_do_add.jpg)
 
 
 
 ### To-Do-List Link
 
-- Solution URL: [Food Inventory App](https://www.stephen.photography/)
+- Solution URL: [To-Do-List](https://www.stephen.photography/todolist/)
 
 # JWST-Hubble Slider
 
@@ -75,19 +75,19 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 ### JWST-Hubble Slider Challenge
 
-I wanted to make a stylish and functional website for my photography. Something that is not only a great place to get in contact with potential clients but also put my work on display for them to view.
+For this application I wanted to make a great illustration for the differences between the James Webb Space Telescope and the Hubble Space Telescope. A lot of online slider comparison I have seen did not go to the trouble of actually lining up the images, so for this one I did the extra steps of making sure the images were aligned before pushing them to my AWS S3 bucket.
 
 ### JWST-Hubble Slider Screenshots
 
-![](./screenshots/photo_index.jpg)
-![](./screenshots/patination_filters.jpg)
-![](./screenshots/contact.jpg)
+![](./screenshots/stephansquintetscreenshot.jpg)
+![](./screenshots/carinanebulascreenshot.jpg)
+
 
 
 
 ### JWST-Hubble Slider Link
 
-- Solution URL: [Food Inventory App](https://www.stephen.photography/)
+- Solution URL: [Hubble vs JWST Slider](https://www.stephen.photography/hubble-vs-jwst/carina-nebula/)
 
 
 ## My process
