@@ -1,6 +1,6 @@
 # Portfolio Applications
 
-This was created with the hope of reducing food waste and saving users hundreds of dollars a year. 
+These applications are branched off of my main portfolio and include a photography portfolio, custom to-do-list app, and a comparison slider for space telescope imagery.
 
 ## Table of contents
 
