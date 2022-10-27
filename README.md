@@ -57,7 +57,7 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 This application was created because I can be very forgetful sometimes. Wit this application users can make their own account and keep track of their own to-do-list. They can create, read, update, and delete items as they wish. They may also mark items as complete but still visible if they wish.
 
-### To-Do-List screenshots
+### To-Do-List Screenshots
 
 ![](./screenshots/to_do_list_login.jpg)
 ![](./screenshots/to_do_items.jpg)
@@ -92,7 +92,11 @@ For this application I wanted to make a great illustration for the differences b
 
 ## My process
 
-The project utilizes Linode to serve webpages, AWS S3 buckets to serve static and images, and AWS RDS to maintain the MySQL database. The HTML and CSS both utilize Bootstrap4 for a simple frontend and a dynamic layout. The backend is handled by Django for organizing models, templates, routing, URLs, and admin functionality. The album categories use JavaScript to dynamically serve the correct category of photography the user is interested in, whether it is nature, astrophotography, macro, or portraiture. The contact form uses reCAPTCHA to verify responses before storing them in the database and sending me an email notification.
+All of these projects utilizes Linode to serve webpages, AWS S3 buckets to serve static and images, and AWS RDS to maintain the MySQL databases.The backend is handled by Django for organizing models, templates, routing, URLs, and admin functionality. 
+
+The JWST/Hubble slider and To-Do-List App both utilize custom HTML and CSS, while my photography portfolio uses Bootstrap4 to simplify HTML and CSS while creating an aesthetically pleasing frontend.
+
+For my photography portfolio the album categories use JavaScript to dynamically serve the correct category of photography the user is interested in, whether it is nature, astrophotography, macro, or portraiture. The contact form uses reCAPTCHA to verify responses before storing them in the database and sending me an email notification. My main programming portfolio and the JWST/Hubble slider both use custom JavaScript to allow for a dynamic dark and light mode that can be toggled at the top.
 
 ### Built with
 
@@ -102,21 +106,23 @@ The project utilizes Linode to serve webpages, AWS S3 buckets to serve static an
 - MySQL
 - Django
 - Desktop-first workflow
+- Bootstrap4
+- Javascript
 
 
 
 ### What I learned
 
-I learned a lot about the Django web framework and initializing and maintaining a Linux server for this application. There was also a lot I learned about AWS and the many serves it has to offer. Bootstrap was also a big help in making the templating much easier.
+This portfolio site taught me how versatile Django can be. With just one Django project I was able to spin up many Django applications pretty easily and have them flow well even if they have differing styles for functionality. I also found out how helpful using JavaScript can be to create dynamic user responsive objects like the comparison slider, dynamic dark-mode, or the instant gallery query. I learned when it is good to use a CSS framework like Bootstrap to make things easier but still be able to make a quick and simple application with custom CSS/HTML.
 
 ### Continued development
 
 
-I will continue to work on implementing new features, improving the style of the website, maintaining the server, and making the barcode search API more robust.
+I will continue to work on implementing new features, improving the style of the website, maintaining the server, and adding more JWST/Hubble imagery to compare.
 
 
 ## Author
 
-- Website - [Portfolio Site](https://www.stephen.photography/portfolio)
+- My Website - [Portfolio Site](https://www.stephen.photography/portfolio)
 
 
