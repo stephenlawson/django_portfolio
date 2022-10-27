@@ -47,7 +47,7 @@ I wanted to make a stylish and functional website for my photography. Something 
 
 ### Photography Portfolio Link
 
-- Solution URL: [Photography Portfolio](https://www.stephen.photography/)
+- Photography Portfolio Website URL: [Photography Portfolio](https://www.stephen.photography/)
 
 # To-Do-List
 
@@ -67,7 +67,7 @@ This application was created because I can be very forgetful sometimes. With thi
 
 ### To-Do-List Link
 
-- Solution URL: [To-Do-List](https://www.stephen.photography/todolist/register/)
+- To-Do-List Website URL: [To-Do-List](https://www.stephen.photography/todolist/register/)
 
 # JWST-Hubble Slider
 
@@ -87,7 +87,7 @@ For this application I wanted to make a great illustration for the differences b
 
 ### JWST-Hubble Slider Link
 
-- Solution URL: [Hubble vs JWST Slider](https://www.stephen.photography/hubble-vs-jwst/carina-nebula)
+- Hubble vs. JWST Website URL: [Hubble vs JWST Slider](https://www.stephen.photography/hubble-vs-jwst/carina-nebula)
 
 
 ## My process
